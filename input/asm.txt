@@ -1,0 +1,45 @@
+hello.o:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+_main:
+; int main() {
+       0:	55 	                  pushq	%rbp
+       1:	48 89 e5 	            movq	%rsp, %rbp
+       4:	48 83 ec 10 	        subq	$16, %rsp
+; int temp = 1 + 1;
+       8:	c7 45 fc 02 00 00 00 	movl	$2, -4(%rbp)
+; temp ++;
+       f:	8b 45 fc 	            movl	-4(%rbp), %eax
+      12:	83 c0 01 	            addl	$1, %eax
+      15:	89 45 fc 	            movl	%eax, -4(%rbp)
+; int b = 6;
+      18:	c7 45 f8 06 00 00 00 	movl	$6, -8(%rbp)
+; fun(b);
+      1f:	8b 7d f8 	            movl	-8(%rbp), %edi
+      22:	e8 00 00 00 00 	      callq	0 <_main+0x27>
+      27:	31 ff 	              xorl	%edi, %edi
+; }
+      29:	88 45 f7 	            movb	%al, -9(%rbp)
+      2c:	89 f8 	              movl	%edi, %eax
+      2e:	48 83 c4 10 	        addq	$16, %rsp
+      32:	5d 	                  popq	%rbp
+      33:	c3 	                  retq
+      34:	66 2e 0f 1f 84 00 00 00 00 00 	nopw	%cs:(%rax,%rax)
+      3e:	66 90 	nop
+
+_fun:
+; bool fun(int b){
+      40:	55 	                  pushq	%rbp
+      41:	48 89 e5              movq	%rsp, %rbp
+      44:	89 7d f8 	            movl	%edi, -8(%rbp)
+; if(b > 5){
+      47:	83 7d f8 05 	        cmpl	$5, -8(%rbp)
+      4b:	0f 8e 04 00 00 00 	  jle	4 <_fun+0x15>
+; return true;  
+      51:	c6 45 ff 01 	        movb	$1, -1(%rbp)
+; }
+      55:	8a 45 ff 	            movb	-1(%rbp), %al
+      58:	24 01 	              andb	$1, %al
+      5a:	0f b6 c0 	            movzbl	%al, %eax
+      5d:	5d 	                  popq	%rbp
+      5e:	c3 	                  retq

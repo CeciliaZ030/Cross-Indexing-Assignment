@@ -1,0 +1,266 @@
+hello.dSYM/Contents/Resources/DWARF/hello:	file format Mach-O 64-bit x86-64
+
+.debug_abbrev contents:
+Abbrev table for offset: 0x00000000
+[1] DW_TAG_compile_unit	DW_CHILDREN_yes
+	DW_AT_producer	DW_FORM_strp
+	DW_AT_language	DW_FORM_data2
+	DW_AT_name	DW_FORM_strp
+	DW_AT_stmt_list	DW_FORM_sec_offset
+	DW_AT_comp_dir	DW_FORM_strp
+	DW_AT_low_pc	DW_FORM_addr
+	DW_AT_high_pc	DW_FORM_data4
+
+[2] DW_TAG_subprogram	DW_CHILDREN_yes
+	DW_AT_low_pc	DW_FORM_addr
+	DW_AT_high_pc	DW_FORM_data4
+	DW_AT_frame_base	DW_FORM_exprloc
+	DW_AT_name	DW_FORM_strp
+	DW_AT_decl_file	DW_FORM_data1
+	DW_AT_decl_line	DW_FORM_data1
+	DW_AT_type	DW_FORM_ref4
+	DW_AT_external	DW_FORM_flag_present
+
+[3] DW_TAG_variable	DW_CHILDREN_no
+	DW_AT_location	DW_FORM_exprloc
+	DW_AT_name	DW_FORM_strp
+	DW_AT_decl_file	DW_FORM_data1
+	DW_AT_decl_line	DW_FORM_data1
+	DW_AT_type	DW_FORM_ref4
+
+[4] DW_TAG_subprogram	DW_CHILDREN_yes
+	DW_AT_low_pc	DW_FORM_addr
+	DW_AT_high_pc	DW_FORM_data4
+	DW_AT_frame_base	DW_FORM_exprloc
+	DW_AT_name	DW_FORM_strp
+	DW_AT_decl_file	DW_FORM_data1
+	DW_AT_decl_line	DW_FORM_data1
+	DW_AT_prototyped	DW_FORM_flag_present
+	DW_AT_type	DW_FORM_ref4
+	DW_AT_external	DW_FORM_flag_present
+
+[5] DW_TAG_formal_parameter	DW_CHILDREN_no
+	DW_AT_location	DW_FORM_exprloc
+	DW_AT_name	DW_FORM_strp
+	DW_AT_decl_file	DW_FORM_data1
+	DW_AT_decl_line	DW_FORM_data1
+	DW_AT_type	DW_FORM_ref4
+
+[6] DW_TAG_base_type	DW_CHILDREN_no
+	DW_AT_name	DW_FORM_strp
+	DW_AT_encoding	DW_FORM_data1
+	DW_AT_byte_size	DW_FORM_data1
+
+
+.debug_abbrev.dwo contents:
+< EMPTY >
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000093 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x08 (next unit at 0x00000097)
+
+0x0000000b: DW_TAG_compile_unit [1] *
+              DW_AT_producer [DW_FORM_strp]	( .debug_str[0x00000001] = "Apple LLVM version 10.0.1 (clang-1001.0.46.4)")
+              DW_AT_language [DW_FORM_data2]	(DW_LANG_C99)
+              DW_AT_name [DW_FORM_strp]	( .debug_str[0x0000002f] = "hello.c")
+              DW_AT_stmt_list [DW_FORM_sec_offset]	(0x00000000)
+              DW_AT_comp_dir [DW_FORM_strp]	( .debug_str[0x00000037] = "/Users/ceciliazhang/Projects/CSC254/Ass4/input")
+              DW_AT_low_pc [DW_FORM_addr]	(0x0000000100000f50)
+              DW_AT_high_pc [DW_FORM_data4]	(0x0000005f)
+
+0x0000002a:   DW_TAG_subprogram [2] *
+                DW_AT_low_pc [DW_FORM_addr]	(0x0000000100000f50)
+                DW_AT_high_pc [DW_FORM_data4]	(0x00000034)
+                DW_AT_frame_base [DW_FORM_exprloc]	(<0x1> 56 )
+                DW_AT_name [DW_FORM_strp]	( .debug_str[0x00000066] = "main")
+                DW_AT_decl_file [DW_FORM_data1]	("/Users/ceciliazhang/Projects/CSC254/Ass4/input/hello.c")
+                DW_AT_decl_line [DW_FORM_data1]	(5)
+                DW_AT_type [DW_FORM_ref4]	(cu + 0x0088 => {0x00000088})
+                DW_AT_external [DW_FORM_flag_present]	(true)
+
+0x00000043:     DW_TAG_variable [3]  
+                  DW_AT_location [DW_FORM_exprloc]	(<0x2> 91 7c )
+                  DW_AT_name [DW_FORM_strp]	( .debug_str[0x0000006b] = "temp")
+                  DW_AT_decl_file [DW_FORM_data1]	("/Users/ceciliazhang/Projects/CSC254/Ass4/input/hello.c")
+                  DW_AT_decl_line [DW_FORM_data1]	(7)
+                  DW_AT_type [DW_FORM_ref4]	(cu + 0x0088 => {0x00000088})
+
+0x00000051:     DW_TAG_variable [3]  
+                  DW_AT_location [DW_FORM_exprloc]	(<0x2> 91 78 )
+                  DW_AT_name [DW_FORM_strp]	( .debug_str[0x00000070] = "b")
+                  DW_AT_decl_file [DW_FORM_data1]	("/Users/ceciliazhang/Projects/CSC254/Ass4/input/hello.c")
+                  DW_AT_decl_line [DW_FORM_data1]	(10)
+                  DW_AT_type [DW_FORM_ref4]	(cu + 0x0088 => {0x00000088})
+
+0x0000005f:     NULL
+
+0x00000060:   DW_TAG_subprogram [4] *
+                DW_AT_low_pc [DW_FORM_addr]	(0x0000000100000f90)
+                DW_AT_high_pc [DW_FORM_data4]	(0x0000001f)
+                DW_AT_frame_base [DW_FORM_exprloc]	(<0x1> 56 )
+                DW_AT_name [DW_FORM_strp]	( .debug_str[0x00000072] = "fun")
+                DW_AT_decl_file [DW_FORM_data1]	("/Users/ceciliazhang/Projects/CSC254/Ass4/input/hello.c")
+                DW_AT_decl_line [DW_FORM_data1]	(14)
+                DW_AT_prototyped [DW_FORM_flag_present]	(true)
+                DW_AT_type [DW_FORM_ref4]	(cu + 0x008f => {0x0000008f})
+                DW_AT_external [DW_FORM_flag_present]	(true)
+
+0x00000079:     DW_TAG_formal_parameter [5]  
+                  DW_AT_location [DW_FORM_exprloc]	(<0x2> 91 78 )
+                  DW_AT_name [DW_FORM_strp]	( .debug_str[0x00000070] = "b")
+                  DW_AT_decl_file [DW_FORM_data1]	("/Users/ceciliazhang/Projects/CSC254/Ass4/input/hello.c")
+                  DW_AT_decl_line [DW_FORM_data1]	(14)
+                  DW_AT_type [DW_FORM_ref4]	(cu + 0x0088 => {0x00000088})
+
+0x00000087:     NULL
+
+0x00000088:   DW_TAG_base_type [6]  
+                DW_AT_name [DW_FORM_strp]	( .debug_str[0x00000076] = "int")
+                DW_AT_encoding [DW_FORM_data1]	(DW_ATE_signed)
+                DW_AT_byte_size [DW_FORM_data1]	(0x04)
+
+0x0000008f:   DW_TAG_base_type [6]  
+                DW_AT_name [DW_FORM_strp]	( .debug_str[0x0000007a] = "_Bool")
+                DW_AT_encoding [DW_FORM_data1]	(DW_ATE_boolean)
+                DW_AT_byte_size [DW_FORM_data1]	(0x01)
+
+0x00000096:   NULL
+
+.debug_loc contents:
+
+.debug_loc.dwo contents:
+
+.debug_frame contents:
+
+
+.debug_macinfo contents:
+
+.debug_aranges contents:
+Address Range Header: length = 0x0000003c, version = 0x0002, cu_offset = 0x00000000, addr_size = 0x08, seg_size = 0x00
+[0x0000000100000f50 - 0x0000000100000f84)
+[0x0000000100000f90 - 0x0000000100000faf)
+
+.debug_line contents:
+Line table prologue:
+    total_length: 0x0000006b
+         version: 4
+ prologue_length: 0x0000001f
+ min_inst_length: 1
+max_ops_per_inst: 1
+ default_is_stmt: 1
+       line_base: -5
+      line_range: 14
+     opcode_base: 13
+standard_opcode_lengths[DW_LNS_copy] = 0
+standard_opcode_lengths[DW_LNS_advance_pc] = 1
+standard_opcode_lengths[DW_LNS_advance_line] = 1
+standard_opcode_lengths[DW_LNS_set_file] = 1
+standard_opcode_lengths[DW_LNS_set_column] = 1
+standard_opcode_lengths[DW_LNS_negate_stmt] = 0
+standard_opcode_lengths[DW_LNS_set_basic_block] = 0
+standard_opcode_lengths[DW_LNS_const_add_pc] = 0
+standard_opcode_lengths[DW_LNS_fixed_advance_pc] = 1
+standard_opcode_lengths[DW_LNS_set_prologue_end] = 0
+standard_opcode_lengths[DW_LNS_set_epilogue_begin] = 0
+standard_opcode_lengths[DW_LNS_set_isa] = 1
+                Dir  Mod Time   File Len   File Name
+                ---- ---------- ---------- ---------------------------
+file_names[  1]    0 0x00000000 0x00000000 hello.c
+
+Address            Line   Column File   ISA Discriminator Flags
+------------------ ------ ------ ------ --- ------------- -------------
+0x0000000100000f50      5      0      1   0             0  is_stmt
+0x0000000100000f5f      8      7      1   0             0  is_stmt
+0x0000000100000f68     10      6      1   0             0  is_stmt
+0x0000000100000f6f     11      6      1   0             0  is_stmt
+0x0000000100000f72     11      2      1   0             0 
+0x0000000100000f79     12      1      1   0             0  is_stmt
+0x0000000100000f84     12      1      1   0             0  is_stmt end_sequence
+0x0000000100000f90     14      0      1   0             0  is_stmt
+0x0000000100000f97     15      7      1   0             0  is_stmt prologue_end
+0x0000000100000f9b     15      5      1   0             0 
+0x0000000100000fa1     16      3      1   0             0  is_stmt
+0x0000000100000fa5     18      1      1   0             0  is_stmt
+0x0000000100000faf     18      1      1   0             0  is_stmt end_sequence
+
+.debug_cu_index contents:
+
+.debug_tu_index contents:
+
+.debug_line.dwo contents:
+
+.debug_str contents:
+0x00000000: ""
+0x00000001: "Apple LLVM version 10.0.1 (clang-1001.0.46.4)"
+0x0000002f: "hello.c"
+0x00000037: "/Users/ceciliazhang/Projects/CSC254/Ass4/input"
+0x00000066: "main"
+0x0000006b: "temp"
+0x00000070: "b"
+0x00000072: "fun"
+0x00000076: "int"
+0x0000007a: "_Bool"
+
+.debug_ranges contents:
+
+.debug_pubnames contents: a
+length = 0x0000001f version = 0x0002 unit_offset = 0x00000000 unit_size = 0x00000097
+Offset     Name
+0x0000002a "main"
+0x00000060 "fun"
+
+.debug_pubtypes contents: a
+length = 0x00000020 version = 0x0002 unit_offset = 0x00000000 unit_size = 0x00000097
+Offset     Name
+0x00000088 "int"
+0x0000008f "_Bool"
+
+.debug_gnu_pubnames contents: a
+
+.debug_gnu_pubtypes contents: a
+
+.apple_names contents:
+Magic = 0x48415348
+Version = 0x0001
+Hash function = 0x00000000
+Bucket count = 2
+Hashes count = 2
+HeaderData length = 12
+DIE offset base = 0
+Number of atoms = 1
+Atom[0] Type: DW_ATOM_die_offset Form: DW_FORM_data4
+Bucket[0]
+  Hash = 0x0b88744e Offset = 0x00000038
+    Name: 00000076 "fun"
+    Data[0] => {Atom[0]: 0x00000060} 
+  Hash = 0x7c9a7f6a Offset = 0x00000048
+    Name: 0000006b "main"
+    Data[0] => {Atom[0]: 0x0000002a} 
+Bucket[1]
+  EMPTY
+
+.apple_types contents:
+Magic = 0x48415348
+Version = 0x0001
+Hash function = 0x00000000
+Bucket count = 2
+Hashes count = 2
+HeaderData length = 24
+DIE offset base = 0
+Number of atoms = 4
+Atom[0] Type: DW_ATOM_die_offset Form: DW_FORM_data4
+Atom[1] Type: DW_ATOM_die_tag Form: DW_FORM_data2
+Atom[2] Type: DW_ATOM_Unknown_0x5 Form: DW_FORM_data1
+Atom[3] Type: DW_ATOM_Unknown_0x6 Form: DW_FORM_data4
+Bucket[0]
+  Hash = 0x0b888030 Offset = 0x00000044
+    Name: 0000007a "int"
+    Data[0] => {Atom[0]: 0x00000088} {Atom[1]: 0x0024} {Atom[2]: 0x00} {Atom[3]: 0x0c3a28a4} 
+  Hash = 0x0edc2ff0 Offset = 0x0000005b
+    Name: 00000080 "_Bool"
+    Data[0] => {Atom[0]: 0x0000008f} {Atom[1]: 0x0024} {Atom[2]: 0x00} {Atom[3]: 0x0299c564} 
+Bucket[1]
+  EMPTY
+
+.apple_namespaces contents:
+
+.apple_objc contents:
